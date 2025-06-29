@@ -1,4 +1,4 @@
-![Digital clock](/public/Imagen%201.png)
+![Digital clock](/asset/Imagen%201.png)
 *Reloj digital con formato 12h, indicador AM/PM y días de la semana*
 
 # 🕒 Reloj Digital
