@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #282c34;
+    color: rgb(238, 238, 238);
+}
+
+.digital-clock {
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(200px);
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 4px 8px rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.hour,
+.min,
+.sec {
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.dot {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 0 5px;
+    color: #ffffff;
+    transition: opacity 0.3s ease;
+}
+
+.dot.invisible {
+    opacity: 0;
+}
+
+.week {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #5c5858;
+    border-radius: 10px;
+}
+
+.week div {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.week div.active {
+    color: #00ffaa;
+    font-weight: 700;
+    transform: scale(1.1);
+}
+
+
+.hour,
+.min,
+.sec,
+.week div.active {
+    text-shadow: 0 0 5px #837a7a, 0 0 10px #000000;
+}
+
+.ampm {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 5px;
+    align-self: flex-end;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+
+@media (max-width: 400px) {
+    .digital-clock {
+        width: 250px;
+        padding: 20px;
+    }
+
+    .hour,
+    .min,
+    .sec,
+    .dot {
+        font-size: 3rem;
+    }
+
+    .week div {
+        font-size: 0.8rem;
+    }
+}
